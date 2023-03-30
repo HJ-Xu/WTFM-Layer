@@ -10,7 +10,7 @@ You can view the detailed content of the paper [here](https://onlinelibrary.wile
 # Installation
 ```
 python  >= 3.8
-pytorch >= 1.11.0
+pytorch >= 1.10.0
 ```
 
 # Download data
