@@ -4,9 +4,8 @@ Code for "WTFM Layer: An Effective Map Extractor for Unsupervised Shape Correspo
 
 You can view the detailed content of the paper [here](https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.14656).
 <p align="center">
-<img src="texture_compare_yesno.pdf" width="400">
+<img src="images/image1.png" width="500">
 </p>
-![image](https://github.com/HJ-Xu/WTFM-Layer/blob/main/texture_compare_yesno.pdf)
 
 # Installation
 ```
