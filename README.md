@@ -4,23 +4,23 @@ Code for "WTFM Layer: An Effective Map Extractor for Unsupervised Shape Correspo
 
 You can view the detailed content of the paper [here](https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.14656).
 
-![texture_compare_yesno.pdf](https://github.com/HJ-Xu/WTFM-Layer/files/11107903/texture_compare_yesno.pdf)
+![image](https://github.com/HJ-Xu/WTFM-Layer/blob/main/texture_compare_yesno.pdf)
 
 # Installation
 ```
-python  >= 3.7
-pytorch >= 1.12.0
+python  >= 3.8
+pytorch >= 1.11.0
 ```
 
 # Download data
-Regarding the [remesh 5K dataset](), we used the dataset from Geofmnet, and for the [anisotropic dataset](), we used the dataset from DUO. Please put the downloaded data in the off format into the directory `data/datasetname/shapes`.
+Regarding the [remesh 5K dataset](https://nuage.lix.polytechnique.fr/index.php/s/LJFXrsTG22wYCXx), we used the dataset from GeomFmaps, and for the [anisotropic dataset](https://github.com/nicolasdonati/DUO-FM/tree/main/data), we used the dataset from DUO-FMNet. Please put the downloaded data in the off format into the directory `data/datasetname/shapes`.
 
 # Usage
 To train WTFM model, use the training script:
 ```
 > python train.py  
 ```
-To evaluate a trained model, use:
+We provide networks trained on the Faust Remesh and SCAPE Remesh datasets, and the network parameters are saved in `saved_models/faust/ckpt_ep0.pth` and `saved_models/scape/ckpt_ep0.pth`. You can directly run the following code to verify the experimental accuracy mentioned in the paper:
 ```
 > python train.py --evaluate
 ```
